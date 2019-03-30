@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # SDKs
 export ADOBE_AIR_HOME=/usr/local/share/adobe-air-sdk
 export ANDROID_SDK_ROOT=/usr/local/share/android-sdk
