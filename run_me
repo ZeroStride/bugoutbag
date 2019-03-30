@@ -1,1 +1,14 @@
 #!/bin/bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install git
+git clone https://github.com/ZeroStride/bugoutbag.git $HOME/bugoutbag
+
+# Add bugoutbag to .bash_profile
+grep -q "bugoutbag" $HOME/.bash_profile || echo $'\n[[ -s "$HOME/bugoutbag/.bash_profile" ]] && source "$HOME/bugoutbag/.bash_profile" # Load the bugoutbag' >> $HOME/.bash_profile
+
+# Fake passports
+brew cask install sublime-text
+brew cask install 1password
+
+# Mustaches
+curl -sSL https://get.rvm.io | bash -s stable --ruby
