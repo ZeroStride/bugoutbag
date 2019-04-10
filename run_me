@@ -21,6 +21,7 @@ brew cask install drobo-dashboard
 brew cask install homebrew/cask-versions/java8
 brew cask install android-sdk
 brew cask install android-studio
+brew install getsentry/tools/sentry-cli
 
 # iOS dev
 brew install clang-format
