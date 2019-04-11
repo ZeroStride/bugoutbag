@@ -5,6 +5,7 @@ export ANDROID_HOME=/usr/local/share/android-sdk
 export ANDROID_NDK_HOME=/usr/local/share/android-ndk
 
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
 
 # Git
 export EDITOR='subl -w'

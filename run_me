@@ -26,6 +26,19 @@ brew install getsentry/tools/sentry-cli
 # iOS dev
 brew install clang-format
 
+# Ruby 2.2.2 shennanagins
+brew install libiconv
+brew link libiconv
+
+brew install mysql-connector-c
+sed -i '' 's/libs="\$libs -l "/libs="\$libs -l mysqlclient "/' /usr/local/Cellar/mysql-connector-c/*/bin/mysql_config
+
+# Teak dev
+brew install mysql@5.6
+brew install postgresql
+
+brew services start mysql@5.6
+
 # Docker and CircleCI
 brew cask install docker
 brew install --ignore-dependencies circleci
