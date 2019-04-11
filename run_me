@@ -4,7 +4,7 @@ brew install git
 git clone https://github.com/ZeroStride/bugoutbag.git $HOME/bugoutbag
 
 # Add bugoutbag to .bash_profile
-grep -q "bugoutbag" $HOME/.bash_profile || echo $'\n[[ -s "$HOME/bugoutbag/.bash_profile" ]] && source "$HOME/bugoutbag/.bash_profile" # Load the bugoutbag' >> $HOME/.bash_profile
+grep -q "bugoutbag" $HOME/.bash_profile || echo $'\n[[ -s "$HOME/bugoutbag/.bash_profile" ]] && source "$HOME/bugoutbag/.bash_profile" # Load the bugoutbag' | cat - $HOME/.bash_profile > temp && mv temp $HOME/.bash_profile
 
 # Fake passports
 brew cask install sublime-text
