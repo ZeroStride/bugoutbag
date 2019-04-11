@@ -1,6 +1,10 @@
 #!/bin/bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 brew install git
+git config --global user.name "Pat Wilson"
+git config --global user.email "zerostride@gmail.com"
+
 git clone https://github.com/ZeroStride/bugoutbag.git $HOME/bugoutbag
 
 # Add bugoutbag to .bash_profile
