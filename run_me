@@ -39,6 +39,9 @@ brew install postgresql
 
 brew services start mysql@5.6
 
+# Completely removing mysql:
+# https://coderwall.com/p/os6woq/uninstall-all-those-broken-versions-of-mysql-and-re-install-it-with-brew-on-mac-mavericks
+
 # Docker and CircleCI
 brew cask install docker
 brew install --ignore-dependencies circleci
