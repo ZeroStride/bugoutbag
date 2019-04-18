@@ -29,6 +29,10 @@ brew install getsentry/tools/sentry-cli
 
 # iOS dev
 brew install clang-format
+brew install usbmuxd --HEAD
+brew install --HEAD libimobiledevice
+brew install --HEAD ideviceinstaller
+sudo chmod -R 777 /var/db/lockdown
 
 # Ruby 2.2.2 shennanagins
 brew install libiconv
