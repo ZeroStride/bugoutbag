@@ -1,4 +1,6 @@
 #!/bin/bash
+post_install=""
+
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 brew install git
@@ -32,7 +34,8 @@ brew install clang-format
 brew install usbmuxd --HEAD
 brew install --HEAD libimobiledevice
 brew install --HEAD ideviceinstaller
-sudo chmod -R 777 /var/db/lockdown
+# sudo chmod -R 777 /var/db/lockdown
+post_install="${post_install}For libimobiledevice:\nsudo chmod -R 777 /var/db/lockdown\n\n"
 
 # Ruby 2.2.2 shennanagins
 brew install libiconv
@@ -62,3 +65,6 @@ brew cask install discord
 
 # uBlock Origin
 open "https://safari-extensions.apple.com/details/?id=com.el1t.uBlock-3NU33NW2M3"
+
+# Post-install notes
+printf "$post_install" | subl
