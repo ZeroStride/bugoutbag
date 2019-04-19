@@ -37,6 +37,9 @@ brew install --HEAD ideviceinstaller
 # sudo chmod -R 777 /var/db/lockdown
 post_install="${post_install}For libimobiledevice:\nsudo chmod -R 777 /var/db/lockdown\n\n"
 
+# Other Dev
+brew install astyle
+
 # Ruby 2.2.2 shennanagins
 brew install libiconv
 brew link libiconv
