@@ -40,6 +40,11 @@ post_install="${post_install}For libimobiledevice:\nsudo chmod -R 777 /var/db/lo
 # Other Dev
 brew install astyle
 
+# Docs
+pip3 install sphinx
+pip3 install sphinx-autobuild
+pip3 install sphinx_rtd_theme
+
 # Ruby 2.2.2 shennanagins
 brew install libiconv
 brew link libiconv
