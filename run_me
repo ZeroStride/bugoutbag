@@ -63,6 +63,9 @@ brew install postgresql
 brew cask install docker
 brew install --ignore-dependencies circleci
 
+# NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+
 # Alfred
 brew cask install alfred
 open /Applications/Alfred\ 3.app

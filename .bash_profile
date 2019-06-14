@@ -14,3 +14,8 @@ export GIT_EDITOR='subl -wl1'
 # ls
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 alias ls='ls -Gph'
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
