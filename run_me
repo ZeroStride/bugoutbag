@@ -30,6 +30,7 @@ brew install getsentry/tools/sentry-cli
 
 # iOS dev
 brew install clang-format
+brew install oclint/formulae/oclint
 brew install usbmuxd --HEAD
 brew install --HEAD libimobiledevice
 brew install --HEAD ideviceinstaller
