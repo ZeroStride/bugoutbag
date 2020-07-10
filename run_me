@@ -18,10 +18,9 @@ brew cask install 1password
 
 # Mustaches
 curl -sSL https://get.rvm.io | bash -s stable --ruby
-# TODO: switch to rbenv? `brew install rbenv rbenv-binstubs rbenv-gemset`
 
 # Android dev
-brew install openjdk@14
+brew cask install homebrew/cask-versions/adoptopenjdk8
 brew cask install android-sdk
 brew cask install android-studio
 brew install getsentry/tools/sentry-cli
