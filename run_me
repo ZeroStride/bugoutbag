@@ -21,7 +21,7 @@ curl -sSL https://get.rvm.io | bash -s stable --ruby
 # TODO: switch to rbenv? `brew install rbenv rbenv-binstubs rbenv-gemset`
 
 # Android dev
-brew cask install homebrew/cask-versions/java8
+brew install openjdk@14
 brew cask install android-sdk
 brew cask install android-studio
 brew install getsentry/tools/sentry-cli
