@@ -12,6 +12,10 @@ git clone https://github.com/ZeroStride/bugoutbag.git $HOME/bugoutbag
 # Add bugoutbag to .zshrc
 grep -q "bugoutbag" $HOME/.zshrc || echo $'\n[[ -s "$HOME/bugoutbag/.zshrc" ]] && source "$HOME/bugoutbag/.zshrc" # Load the bugoutbag' | cat - $HOME/.zshrc > temp && mv temp $HOME/.zshrc
 
+# OpenSSL versions
+# brew install rbenv/tap/openssl@1.0
+# brew install openssl@1.1
+
 # Fake passports
 brew cask install sublime-text
 brew cask install 1password
