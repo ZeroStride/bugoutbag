@@ -15,6 +15,9 @@ export GIT_EDITOR='subl -wl1'
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 alias ls='ls -Gph'
 
+# zsh prompt
+PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%1~%f%b %# '
+
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

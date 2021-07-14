@@ -9,8 +9,8 @@ git config --global user.email "zerostride@gmail.com"
 
 git clone https://github.com/ZeroStride/bugoutbag.git $HOME/bugoutbag
 
-# Add bugoutbag to .bash_profile
-grep -q "bugoutbag" $HOME/.bash_profile || echo $'\n[[ -s "$HOME/bugoutbag/.bash_profile" ]] && source "$HOME/bugoutbag/.bash_profile" # Load the bugoutbag' | cat - $HOME/.bash_profile > temp && mv temp $HOME/.bash_profile
+# Add bugoutbag to .zshrc
+grep -q "bugoutbag" $HOME/.zshrc || echo $'\n[[ -s "$HOME/bugoutbag/.zshrc" ]] && source "$HOME/bugoutbag/.zshrc" # Load the bugoutbag' | cat - $HOME/.zshrc > temp && mv temp $HOME/.zshrc
 
 # Fake passports
 brew cask install sublime-text
