@@ -4,7 +4,7 @@ post_install=""
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 brew install git
-git config --global user.name "Pat Wilson"
+git config --global user.name "Ezri Coniglio"
 git config --global user.email "zerostride@gmail.com"
 
 git clone https://github.com/ZeroStride/bugoutbag.git $HOME/bugoutbag
@@ -23,6 +23,9 @@ brew cask install 1password
 # Mustaches
 curl -sSL https://get.rvm.io | bash -s stable --ruby
 
+# 
+brew install aws-vault
+
 # Android dev
 brew cask install homebrew/cask-versions/adoptopenjdk8
 brew cask install android-sdk
@@ -31,7 +34,7 @@ brew install getsentry/tools/sentry-cli
 
 # iOS dev
 brew install clang-format
-brew install oclint/formulae/oclint
+brew install oclint --cask
 brew install usbmuxd --HEAD
 brew install --HEAD libimobiledevice
 brew install --HEAD ideviceinstaller
@@ -40,11 +43,6 @@ post_install="${post_install}For libimobiledevice:\nsudo chmod -R 777 /var/db/lo
 
 # Other Dev
 brew install astyle
-
-# Docs
-pip3 install sphinx
-pip3 install sphinx-autobuild
-pip3 install sphinx_rtd_theme
 
 # Ruby 2.2.2 shennanagins
 brew install libiconv
